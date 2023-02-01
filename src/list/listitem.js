@@ -14,7 +14,9 @@ function Listitem(props) {
         </div>
         <div className="list-descr"> {descr}</div>
         <div className="list-label">
-          <Label isActive={isActive} />
+          <Label onAction={() => {
+            console.log('parent clicked')
+          }} isActive={isActive} />
         </div>
       </div>
     );
